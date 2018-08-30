@@ -37,8 +37,8 @@ class Saloon():
         if(self.isFull()):
             print ("no space,please leave client '"+name+"'")
         elif(self.baber=='sleep'):
-           # print"wakes the baber"
-            print 'client'+name+ ' can have haircut'
+            print("wakes the baber")
+            print ('client'+name+ ' can have haircut')
             self.baber='busy'       #client come to the saloon     
         else:
             self.enqueue(name)
@@ -48,11 +48,11 @@ class Saloon():
     def clientGo(self):
         if(self.isEmpty()):
             self.baber='sleep'
-            print "no clients,baber goint to sleep"
+            print ("no clients,baber goint to sleep")
         else:                           
             n=self.dequeue()
             self.baber='busy'
-            print "client "+n+" can have hairecut"
+            print ("client "+n+" can have hairecut")
 
         
     
